@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee71e22-aa97-4f2f-b6e3-85db0e031178" name="Changes" comment="initial commit - basic functionality">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nd0011-04-evaluate-news-nlp-new.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/formEventHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1a005c46-a245-47aa-a8eb-5cf8c383abdd" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -91,12 +76,22 @@
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start-dev">
+  <component name="RunManager" selected="npm.build-prod">
     <configuration name="build-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="build-dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-prod" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -134,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build-prod" />
         <item itemvalue="npm.start-dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build-dev" />
@@ -150,8 +146,16 @@
       <option name="presentableId" value="Default" />
       <updated>1674141932305</updated>
       <workItem from="1674141933616" duration="6584000" />
-      <workItem from="1674219501174" duration="8967000" />
+      <workItem from="1674219501174" duration="9384000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit - basic functionality">
+      <created>1674230835336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674230835336</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
