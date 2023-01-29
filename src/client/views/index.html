@@ -6,16 +6,28 @@
 </head>
 <body>
 <h1>Foo!</h1>
-<div id="error-message"></div>
+<fieldset>
+  <legend>Text analysis</legend>
 <label for="user-input">Text to be analyzed</label>
 <textarea id="user-input" cols="50" rows="10" placeholder="enter your text here"></textarea>
-<button type="button" id="btn1">Click me!</button>
+<div id="error-message" class="hidden"></div>
+</fieldset>
+<button type="button" id="btn1">Analyze Text</button>
 <div id="result">
-
+  <div id="agreement"></div>
+  <div id="subjectivity"></div>
+  <div id="irony"></div>
+  <div id="result-text"></div>
 </div>
-<div id="agreement"></div>
-<div id="subjectivity"></div>
-<div id="irony"></div>
-<div id="result-text"></div>
+
+<script>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
 </body>
 </html>
