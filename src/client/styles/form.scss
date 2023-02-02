@@ -1,8 +1,8 @@
 @import "variables";
 
 #result {
-  margin: 20px 20%;
-  border: 1px solid darken($main-background-color, 30%);
+  //margin: 20px 20%;
+  //border: 1px solid darken($main-background-color, 30%);
 }
 
 .icon-cell {
@@ -10,7 +10,65 @@
   height: 2rem;
 }
 
-#button-group {
+.button-group {
   display: flex;
   justify-content: center;
+  padding: 10px 5px;
+  gap: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #E9CBB7;
+  border: 1px solid #B19582;
+  box-shadow: gray 2px 2px 2px;
+}
+
+.button-primary {
+  background-color: #C3FC95;
+  border-color: #81986E;
+}
+
+.button-secondary {
+  background-color: #87F1DA;
+  border-color: #00A98A;
+}
+
+.result-cell {
+  font-family: monospace;
+}
+
+#analysis-input-group {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(2, 2fr);
+}
+
+#user-input {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#analysis-input-group > .button-group {
+  grid-column: 3;
+  flex-direction: column;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #547E8B;
+}
+
+fieldset {
+  border: 2px solid #547E8B;
+  background-color: #ADD8E6;
+}
+
+th {
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
 }

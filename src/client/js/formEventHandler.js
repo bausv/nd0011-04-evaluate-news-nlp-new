@@ -1,11 +1,15 @@
 import {getPossibleFormValidationErrors} from "./formValidation";
 
+const exampleText1 = 'In the country of Sokovia, the Avengers – Tony Stark, Steve Rogers, Thor, Bruce Banner, Natasha Romanoff, and Clint Barton – raid a Hydra outpost led by Wolfgang von Strucker, who has been experimenting on humans using the scepter previously wielded by Loki. They encounter two of Strucker\'s experiments – twins Pietro, who has superhuman speed, and Wanda Maximoff, who can manipulate minds and project energy – and apprehend Strucker, while Stark retrieves Loki\'s scepter.';
+const exampleText2 = 'Main dishes were quite good, but desserts were too sweet for me.'
+
 const clickEventListener = (event) => {
     event.preventDefault();
     document.getElementById('error-message').innerText = '';
     document.getElementById('error-message').classList.add('hidden');
     const validationMessage = getPossibleFormValidationErrors();
     if (!validationMessage) {
+        document.getElementById('spinner-icon').classList.add('fa-spin');
         const value = document.getElementById('user-input').value;
         const requestBody = JSON.stringify({
             text: value
@@ -35,6 +39,7 @@ const doServerRequest = (requestBody, callbackOnSuccess) => {
             callbackOnSuccess(response.agreement, response.subjectivity, response.irony, response.sentence_list[0].text)
         }).catch((error) => {
         document.getElementById('error-message').innerText = `error processing request: ${JSON.stringify(error)}`
+        document.getElementById('spinner-icon').classList.remove('fa-spin');
     });
 };
 
@@ -67,6 +72,7 @@ const setResponseValues = (agreement, subjectivity, irony, sentence) => {
     document.getElementById('subjectivity-icon').classList.add(responseIconTranslate.get(subjectivity));
     document.getElementById('irony-icon').classList.add(responseIconTranslate.get(irony));
     document.getElementById('result').classList.remove('hidden');
+    document.getElementById('spinner-icon').classList.remove('fa-spin');
 }
 
 const resetEventListener = (event) => {
@@ -80,4 +86,14 @@ const resetEventListener = (event) => {
     resetDefaults();
     document.getElementById('result').classList.add('hidden');
 }
-export {clickEventListener, setResponseValues, doServerRequest, resetEventListener};
+
+const example1Listener = (event) => {
+    event.preventDefault();
+    document.getElementById('user-input').value = exampleText1;
+}
+const example2Listener = (event) => {
+    event.preventDefault();
+    document.getElementById('user-input').value = exampleText2;
+}
+
+export {clickEventListener, setResponseValues, doServerRequest, resetEventListener, example1Listener, example2Listener};

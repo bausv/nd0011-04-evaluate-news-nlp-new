@@ -12,47 +12,54 @@
   <main>
     <article id="intro">
       <p>Please enter some text into the textarea below an I'd be happy to analyze it for you once you click the button!</p>
+      <div class="hidden" id="error-message"></div>
     </article>
     <article id="input-form">
-      <fieldset>
+      <fieldset id="analysis-input-group">
         <legend>Text analysis</legend>
         <label for="user-input">Text to be analyzed</label> <textarea cols="50" id="user-input" placeholder="enter your text here" rows="10"></textarea>
-        <div class="hidden" id="error-message"></div>
+        <section class="button-group">
+          <button id="btn-example-1" type="button" class="button-secondary"><i class="fa-solid fa-quote-left fa-fw"></i> Example Text 1</button>
+          <button type="button" id="btn-example-2" class="button-secondary"><i class="fa-solid fa-comment fa-fw"></i> Example Text 2</button>
+        </section>
       </fieldset>
-      <section id="button-group">
-        <button id="btn1" type="button">Analyze Text</button>
-        <button type="reset" id="reset-button">Reset and Clear Results</button>
+      <section class="button-group">
+        <button type="reset" id="reset-button" class="button-secondary"><i class="fa-solid fa-trash-can"></i> Reset and Clear Results</button>
+        <button id="btn1" type="button" class="button-primary"><i class="fa-solid fa-cog" id="spinner-icon"></i> Analyze Text</button>
       </section>
     </article>
-    <article id="result">
-      <table style="width: 100%">
-        <tr>
-          <th>Agreement</th>
-          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="agreement-icon"></i></td>
-          <td>
-            <div id="agreement"></div>
-          </td>
-        </tr>
-        <tr>
-          <th>Objectivity</th>
-          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="subjectivity-icon"></i></td>
-          <td><div id="subjectivity"></div></td>
-        </tr>
-        <tr>
-          <th>Irony</th>
-          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="irony-icon"></i></td>
-          <td><div id="irony"></div></td>
-        </tr>
-        <tr>
-        <th>Text entered</th>
-          <td class="icon-cell">
-            <i class="fa-solid fa-font fa-2xl fa-fw"></i>
-          </td>
-          <td>
-            <div id="result-text"></div>
-          </td>
-        </tr>
-      </table>
+    <article id="result" class="hidden">
+      <fieldset>
+        <legend>Result</legend>
+        <table style="width: 100%">
+          <tr>
+            <th>Agreement</th>
+            <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="agreement-icon"></i></td>
+            <td>
+              <div id="agreement" class="result-cell"></div>
+            </td>
+          </tr>
+          <tr>
+            <th>Objectivity</th>
+            <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="subjectivity-icon"></i></td>
+            <td><div id="subjectivity" class="result-cell"></div></td>
+          </tr>
+          <tr>
+            <th>Irony</th>
+            <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="irony-icon"></i></td>
+            <td><div id="irony" class="result-cell"></div></td>
+          </tr>
+          <tr>
+            <th>Text entered</th>
+            <td class="icon-cell">
+              <i class="fa-solid fa-font fa-2xl fa-fw"></i>
+            </td>
+            <td>
+              <div id="result-text" class="result-cell"></div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
 
     </article>
   </main>

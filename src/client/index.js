@@ -1,7 +1,9 @@
-import { clickEventListener, resetEventListener } from "./js/formEventHandler";
+import { clickEventListener, resetEventListener, example1Listener, example2Listener } from "./js/formEventHandler";
 import './styles/main.scss';
 import './styles/fontawesome/fontawesome.scss'
 import './styles/fontawesome/solid.scss'
 
 document.getElementById('btn1').addEventListener("click", clickEventListener);
-document.getElementById('reset-button').addEventListener("click", resetEventListener)
+document.getElementById('reset-button').addEventListener("click", resetEventListener);
+document.getElementById('btn-example-1').addEventListener("click", example1Listener);
+document.getElementById('btn-example-2').addEventListener("click", example2Listener);

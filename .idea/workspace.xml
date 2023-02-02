@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee71e22-aa97-4f2f-b6e3-85db0e031178" name="Changes" comment="tests added, some first stylings (still looking pretty ugly though)">
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/formEventHandler.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/formValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/formValidation.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/error.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="2ee71e22-aa97-4f2f-b6e3-85db0e031178" name="Changes" comment="Some UI improvements">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/js/formEventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/formEventHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +40,7 @@
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="24120474-c8e4-4112-bfb7-a16ade3d9f86" />
+    <option name="defaultAccountId" value="1a005c46-a245-47aa-a8eb-5cf8c383abdd" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +60,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.13.0",
     "javascript.nodejs.core.library.typings.version": "18.11.18",
-    "last_opened_file_path": "C:/Program Files/nodejs/node.exe",
+    "last_opened_file_path": "C:/dev/udacity/nd0011/nd0011-04-evaluate-news-nlp-new/src/client/styles",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,6 +78,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles" />
+      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles\webfonts" />
+      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles\fontawesome" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\server\img" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new" />
     </key>
@@ -92,33 +88,7 @@
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
-    <configuration name="empty input should result in form validation message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/client/js/formValidation.test.js" />
-      <test-names>
-        <test-name value="empty input should result in form validation message" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="non-empty input should result in undefined" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/client/js/formValidation.test.js" />
-      <test-names>
-        <test-name value="non-empty input should result in undefined" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.start-dev">
     <configuration name="response values are correctly set" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -130,6 +100,26 @@
       <test-names>
         <test-name value="response values are correctly set" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-dev2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-dev2" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="start-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -155,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start-dev" />
+        <item itemvalue="npm.build-dev" />
+        <item itemvalue="npm.build-dev2" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.response values are correctly set" />
-        <item itemvalue="Jest.non-empty input should result in undefined" />
-        <item itemvalue="Jest.empty input should result in form validation message" />
       </list>
     </recent_temporary>
   </component>
@@ -171,11 +161,12 @@
       <option name="presentableId" value="Default" />
       <updated>1674141932305</updated>
       <workItem from="1674141933616" duration="6584000" />
-      <workItem from="1674219501174" duration="9384000" />
+      <workItem from="1674219501174" duration="9563000" />
       <workItem from="1674633173539" duration="57000" />
       <workItem from="1674633270857" duration="280000" />
       <workItem from="1674633575081" duration="740000" />
       <workItem from="1674993418046" duration="6719000" />
+      <workItem from="1675366934299" duration="11405000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit - basic functionality">
       <created>1674230835336</created>
@@ -184,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674230835336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SCSS loader added to webpack prod configuration">
+      <created>1674231234739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674231234739</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Some UI improvements">
+      <created>1675373893552</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675373893552</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +209,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit - basic functionality" />
     <MESSAGE value="tests added, some first stylings (still looking pretty ugly though)" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests added, some first stylings (still looking pretty ugly though)" />
+    <MESSAGE value="Some UI improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some UI improvements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

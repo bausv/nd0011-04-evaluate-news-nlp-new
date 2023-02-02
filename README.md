@@ -12,5 +12,5 @@
 
 * [favicon.ico](src/server/img/favicon.ico) taken from GitHub at [udacity/responsive-images](https://github.com/udacity/responsive-images)
 * This project uses [Font Awesome Free](https://fontawesome.com/), version 6.2.1
-
+* Color palette used has been generated usind [mycolor.space](https://mycolor.space/?hex=%23ADD8E6&sub=1)
 
