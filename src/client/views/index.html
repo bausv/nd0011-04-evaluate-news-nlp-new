@@ -5,29 +5,67 @@
   <title>Hello, World!</title>
 </head>
 <body>
-<h1>Foo!</h1>
-<fieldset>
-  <legend>Text analysis</legend>
-<label for="user-input">Text to be analyzed</label>
-<textarea id="user-input" cols="50" rows="10" placeholder="enter your text here"></textarea>
-<div id="error-message" class="hidden"></div>
-</fieldset>
-<button type="button" id="btn1">Analyze Text</button>
-<div id="result">
-  <div id="agreement"></div>
-  <div id="subjectivity"></div>
-  <div id="irony"></div>
-  <div id="result-text"></div>
+<div class="container">
+  <header>
+    <h1>Text Sentiment Analysis</h1>
+  </header>
+  <main>
+    <article id="intro">
+      <p>Please enter some text into the textarea below an I'd be happy to analyze it for you once you click the button!</p>
+    </article>
+    <article id="input-form">
+      <fieldset>
+        <legend>Text analysis</legend>
+        <label for="user-input">Text to be analyzed</label> <textarea cols="50" id="user-input" placeholder="enter your text here" rows="10"></textarea>
+        <div class="hidden" id="error-message"></div>
+      </fieldset>
+      <section id="button-group">
+        <button id="btn1" type="button">Analyze Text</button>
+        <button type="reset" id="reset-button">Reset and Clear Results</button>
+      </section>
+    </article>
+    <article id="result">
+      <table style="width: 100%">
+        <tr>
+          <th>Agreement</th>
+          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="agreement-icon"></i></td>
+          <td>
+            <div id="agreement"></div>
+          </td>
+        </tr>
+        <tr>
+          <th>Objectivity</th>
+          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="subjectivity-icon"></i></td>
+          <td><div id="subjectivity"></div></td>
+        </tr>
+        <tr>
+          <th>Irony</th>
+          <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="irony-icon"></i></td>
+          <td><div id="irony"></div></td>
+        </tr>
+        <tr>
+        <th>Text entered</th>
+          <td class="icon-cell">
+            <i class="fa-solid fa-font fa-2xl fa-fw"></i>
+          </td>
+          <td>
+            <div id="result-text"></div>
+          </td>
+        </tr>
+      </table>
+
+    </article>
+  </main>
 </div>
 
 <script>
-  // Check that service workers are supported
-  if ('serviceWorker' in navigator) {
-    // Use the window load event to keep the page load performant
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js');
-    });
-  }
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
 </script>
 </body>
 </html>

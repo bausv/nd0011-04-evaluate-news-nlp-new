@@ -1,7 +1,15 @@
 @import "variables";
 
 body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 20%;
+  height: 100vh;
   background-color: var(--main-background-color);
+  box-shadow: 2px 0 10px lightslategray;
+  padding: 0 20px;
 }
 
 .hidden {
@@ -11,6 +19,16 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+
+main {
+}
+
 
 @import "error";
 @import "form";

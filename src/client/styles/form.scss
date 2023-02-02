@@ -4,3 +4,13 @@
   margin: 20px 20%;
   border: 1px solid darken($main-background-color, 30%);
 }
+
+.icon-cell {
+  width: 2rem;
+  height: 2rem;
+}
+
+#button-group {
+  display: flex;
+  justify-content: center;
+}

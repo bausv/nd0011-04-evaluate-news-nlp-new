@@ -10,4 +10,7 @@
 
 ## Credits
 
-[favicon.ico](src/server/img/favicon.ico) taken from GitHub at [udacity/responsive-images](https://github.com/udacity/responsive-images)
+* [favicon.ico](src/server/img/favicon.ico) taken from GitHub at [udacity/responsive-images](https://github.com/udacity/responsive-images)
+* This project uses [Font Awesome Free](https://fontawesome.com/), version 6.2.1
+
+
