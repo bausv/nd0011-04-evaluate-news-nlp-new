@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee71e22-aa97-4f2f-b6e3-85db0e031178" name="Changes" comment="Some more UI improvements">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/webpack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/webpack.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nd0011-04-evaluate-news-nlp-new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nd0011-04-evaluate-news-nlp-new.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/formEventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/formEventHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/formEventHandler.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/formEventHandler.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/formValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/formValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/formValidation.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/formValidation.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +68,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.13.0",
     "javascript.nodejs.core.library.typings.version": "18.11.18",
-    "last_opened_file_path": "C:/dev/udacity/nd0011/nd0011-04-evaluate-news-nlp-new/src/client/styles",
+    "last_opened_file_path": "C:/dev/udacity/nd0011/nd0011-04-evaluate-news-nlp-new/src",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,36 +80,24 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles\webfonts" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client\styles\fontawesome" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\server\img" />
-      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new" />
       <recent name="C:\dev\udacity\nd0011\nd0011-04-evaluate-news-nlp-new\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start-dev">
-    <configuration name="response values are correctly set" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/client/js/formEventHandler.test.js" />
-      <test-names>
-        <test-name value="response values are correctly set" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.test">
     <configuration name="build-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,11 +108,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build-dev2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="eslint-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build-dev2" />
+        <script value="eslint-client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="eslint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eslint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -138,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start-dev" />
-        <item itemvalue="npm.build-dev" />
-        <item itemvalue="npm.build-dev2" />
         <item itemvalue="npm.test" />
-        <item itemvalue="Jest.response values are correctly set" />
+        <item itemvalue="npm.eslint" />
+        <item itemvalue="npm.start-dev" />
+        <item itemvalue="npm.eslint-client" />
+        <item itemvalue="npm.build-dev" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +172,8 @@
       <workItem from="1674633270857" duration="280000" />
       <workItem from="1674633575081" duration="740000" />
       <workItem from="1674993418046" duration="6719000" />
-      <workItem from="1675366934299" duration="11538000" />
+      <workItem from="1675366934299" duration="11675000" />
+      <workItem from="1675507240714" duration="5961000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit - basic functionality">
       <created>1674230835336</created>
@@ -190,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675378508573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Some more UI improvements">
+      <created>1675378725954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675378725954</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

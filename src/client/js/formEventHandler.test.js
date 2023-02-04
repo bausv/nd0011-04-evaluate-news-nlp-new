@@ -2,14 +2,18 @@
  * @jest-environment jsdom
  */
 
-import {setResponseValues} from "./formEventHandler";
+import {setResponseValues} from './formEventHandler';
 
 'use strict';
 test('response values are correctly set', () => {
     document.body.innerHTML = `
-    <div>
+    <div id="result">
+    <span id="spinner-icon"></span>
+    <span id="agreement-icon"></span>
     <span id="agreement"></span>
+    <span id="subjectivity-icon"></span>
     <span id="subjectivity"></span>
+    <span id="irony-icon"></span>
     <span id="irony"></span>
     <span id="result-text"></span>
     </div>

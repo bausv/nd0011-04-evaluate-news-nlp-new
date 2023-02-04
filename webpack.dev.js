@@ -5,20 +5,20 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
-    mode: "development",
+    mode: 'development',
     devtool: 'source-map',
     devServer: {
         static: './dist'
     },
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: 'babel-loader'
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
@@ -32,8 +32,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/client/views/index.html",
-            filename: "index.html"
+            template: './src/client/views/index.html',
+            filename: 'index.html'
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files
@@ -48,4 +48,4 @@ module.exports = {
     optimization: {
         runtimeChunk: 'single',
     }
-}
+};

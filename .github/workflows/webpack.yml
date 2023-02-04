@@ -25,4 +25,6 @@ jobs:
     - name: Build
       run: |
         npm install
+        npm run eslint
         npm run build-prod
+        npm run test

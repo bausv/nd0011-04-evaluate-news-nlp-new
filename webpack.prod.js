@@ -1,11 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
-    mode: "production",
+    mode: 'production',
     output: {
         libraryTarget: 'var',
         library: 'Client'
@@ -15,7 +15,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: 'babel-loader'
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
@@ -29,9 +29,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/client/views/index.html",
-            filename: "index.html"
+            template: './src/client/views/index.html',
+            filename: 'index.html'
         }),
         new WorkboxPlugin.GenerateSW()
     ]
-}
+};
