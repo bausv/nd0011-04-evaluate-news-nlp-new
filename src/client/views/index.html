@@ -19,16 +19,16 @@
         <legend>Text analysis</legend>
         <label for="user-input">Text to be analyzed</label> <textarea cols="50" id="user-input" placeholder="enter your text here" rows="10"></textarea>
         <section class="button-group">
-          <button id="btn-example-1" type="button" class="button-secondary"><i class="fa-solid fa-quote-left fa-fw"></i> Example Text 1</button>
-          <button type="button" id="btn-example-2" class="button-secondary"><i class="fa-solid fa-comment fa-fw"></i> Example Text 2</button>
+          <button class="button-secondary" id="btn-example-1" type="button"><i class="fa-solid fa-quote-left fa-fw"></i> Example Text 1</button>
+          <button class="button-secondary" id="btn-example-2" type="button"><i class="fa-solid fa-comment fa-fw"></i> Example Text 2</button>
         </section>
       </fieldset>
       <section class="button-group">
-        <button type="reset" id="reset-button" class="button-secondary"><i class="fa-solid fa-trash-can"></i> Reset and Clear Results</button>
-        <button id="btn1" type="button" class="button-primary"><i class="fa-solid fa-cog" id="spinner-icon"></i> Analyze Text</button>
+        <button class="button-secondary" id="reset-button" type="reset"><i class="fa-solid fa-trash-can"></i> Reset and Clear Results</button>
+        <button class="button-primary" id="btn1" type="button"><i class="fa-solid fa-cog" id="spinner-icon"></i> Analyze Text</button>
       </section>
     </article>
-    <article id="result" class="hidden">
+    <article class="hidden" id="result">
       <fieldset>
         <legend>Result</legend>
         <table style="width: 100%">
@@ -36,18 +36,22 @@
             <th>Agreement</th>
             <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="agreement-icon"></i></td>
             <td>
-              <div id="agreement" class="result-cell"></div>
+              <div class="result-cell" id="agreement"></div>
             </td>
           </tr>
           <tr>
             <th>Objectivity</th>
             <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="subjectivity-icon"></i></td>
-            <td><div id="subjectivity" class="result-cell"></div></td>
+            <td>
+              <div class="result-cell" id="subjectivity"></div>
+            </td>
           </tr>
           <tr>
             <th>Irony</th>
             <td class="icon-cell"><i class="fa-solid fa-2xl fa-fw" id="irony-icon"></i></td>
-            <td><div id="irony" class="result-cell"></div></td>
+            <td>
+              <div class="result-cell" id="irony"></div>
+            </td>
           </tr>
           <tr>
             <th>Text entered</th>
@@ -55,12 +59,42 @@
               <i class="fa-solid fa-font fa-2xl fa-fw"></i>
             </td>
             <td>
-              <div id="result-text" class="result-cell"></div>
+              <div class="result-cell" id="result-text"></div>
             </td>
           </tr>
         </table>
       </fieldset>
 
+    </article>
+    <article id="country-article">
+      <label for="country-input">Country:</label> <input id="country-input" type="text" value="Germany">
+      <button class="button-primary" id="btn-query-country-info" type="button">Query country info</button>
+    </article>
+    <article class="hidden" id="country-result">
+      <section id="country-flag">
+        <img alt="" height="100px" id="img-flag" src="">
+      </section>
+      <section id="country-locator">
+        <span id="country-region"></span> > <span id="country-subregion"></span> > <span id="country-name"></span>
+      </section>
+      <section id="country-details">
+        Capital: <span id="country-capital"></span><br>
+        Population: <span id="country-population"></span><br>
+        Currency: <span id="country-currency"></span><br>
+      </section>
+    </article>
+    <article id="more-than-one-country-container" class="hidden">
+      <p>With your input, there are multiple possible results for your country query. Please choose the one to use:</p>
+      <table id="tbl-country-select">
+        <thead>
+        <th style="width: auto;"></th>
+        <th style="width: auto;">Name</th>
+        <th style="width: auto;"></th>
+        </thead>
+        <tbody id="tbl-country-select-body">
+
+        </tbody>
+      </table>
     </article>
   </main>
 </div>
